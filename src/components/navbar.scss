@@ -1,0 +1,72 @@
+nav {
+  height: 5rem;
+  width: 100vw;
+  display: flex;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  justify-content: space-between;
+  padding: 0 5rem;
+
+  .app__navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .app__navbar-logo a {
+    width: 7rem;
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+  }
+
+  .app__navbar-links {
+    display: flex;
+    gap: 3.5rem;
+    align-items: center;
+
+    a {
+      font-size: 1.2rem;
+      font-weight: bolder;
+      color: black;
+      text-decoration: none;
+
+      &:hover {
+        color: cyan;
+        transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+      }
+    }
+
+    .login-btn {
+      background: transparent;
+      padding: 0.5rem 1.5rem;
+      border-radius: 0.5rem;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: cyan;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      border: 2px solid cyan;
+
+      &:hover {
+        background-color: cyan;
+        color: black;
+      }
+    }
+  }
+}
