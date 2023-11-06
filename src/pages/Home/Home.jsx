@@ -185,7 +185,13 @@ function Home() {
           </motion.div>
         </div>
       </section>
-      <section className="fourth-section" id="CONTACT">
+      <section
+        className="fourth-section"
+        id="CONTACT"
+        style={{
+          marginBottom: "5rem",
+        }}
+      >
         <motion.div
           whileInView={{ y: [100, 0], opacity: [0, 1] }}
           className="fourth-section-header"
@@ -200,7 +206,14 @@ function Home() {
               <label htmlFor="email">Email</label>
               <input type="email" id="email" placeholder="Your email" />
             </div>
-            <div className="form-group">
+            <div
+              className="form-group"
+              style={{
+                justifyContent: "normal",
+                flexDirection: "column",
+                alignItems: "normal",
+              }}
+            >
               <label htmlFor="message">Message</label>
               <textarea
                 name="message"
@@ -208,9 +221,30 @@ function Home() {
                 cols="30"
                 rows="10"
                 placeholder="Your message"
+                style={{
+                  border: "2px solid cyan",
+                  borderRadius: "0.5rem",
+                  padding: "0.5rem 1rem",
+                }}
               />
             </div>
-            <button type="submit">Send</button>
+            <button
+              type="submit"
+              style={{
+                padding: "10px 20px",
+                backgroundColor: "#4CAF50",
+                color: "white",
+                border: "none",
+                borderRadius: "5px",
+                boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.25)",
+                cursor: "pointer",
+                transition: "background-color 0.3s ease",
+              }}
+              onMouseOver={(e) => (e.target.style.backgroundColor = "#3e8e41")}
+              onMouseOut={(e) => (e.target.style.backgroundColor = "#4CAF50")}
+            >
+              Send
+            </button>
           </form>
         </motion.div>
       </section>
